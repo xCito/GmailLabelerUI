@@ -1,0 +1,28 @@
+.email-item-container {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: 30px 30px 30px auto;
+    grid-template-areas: 
+        "subject    subjectData"
+        "from       fromData"
+        "replyTo    replyToData"
+        "body       bodyData";
+
+    border: 1px solid rgb(102, 102, 16);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.email-item-subject {
+    grid-area: subject;
+}
+.email-item-from {
+    grid-area: from;
+}
+.email-item-replyTo {
+    grid-area: replyTo;
+}
+.email-item-body {
+    grid-area: body;
+}

@@ -1,0 +1,27 @@
+.pane-container {
+    display: grid;
+    grid-template-rows: 80px auto 70px;
+
+    padding: 5px;
+    width: 100%;
+}
+.pane-header {
+    padding: 20px 5px;
+    border: 1px solid blue;
+    text-align: center;
+    vertical-align: bottom;
+    width: 100%;
+}
+.pane-body {
+    border: 1px solid purple;
+    overflow: auto;
+}
+.pane-footer {
+    display: flex;
+    justify-content: flex-end;
+    border: 1px solid pink;
+}
+
+.split-pane-max-height {
+    max-height: 95vh;
+}
